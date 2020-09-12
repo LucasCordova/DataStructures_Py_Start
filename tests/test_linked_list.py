@@ -5,7 +5,17 @@ class LinkedListTest(unittest.TestCase):
     def setUp(self):
         pass
 
-    def test_method_template(self):
+    def test_template(self):
+        """
+        Test description
+        """
+
+        # Arrange
+
+        # Act
+
+        # Assert
+
         pass
 
 

@@ -27,6 +27,13 @@ class Array2D:
         def __getitem__(self, column_index: int):
             raise NotImplementedError
 
+        """ Bracket operator for setting an item
+            Usage: array2d[row_index][column_index] = val
+            @:param column_index the desired column_index
+            @:return the item at array2d[row_index][column_index]
+            @:raises IndexError if the location is out of bounds
+        """
+
         def __setitem__(self, column_index, data: int):
             raise NotImplementedError
 
