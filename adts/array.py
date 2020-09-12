@@ -1,6 +1,4 @@
 
-
-
 class Array:
     """ Class Array - representing 1D data using a List
     """
