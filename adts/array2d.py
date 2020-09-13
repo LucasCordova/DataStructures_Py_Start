@@ -50,6 +50,7 @@ class Array2D:
             Usage:  array2d = Array2D.clone(instance)
             @:param instance an Array instance to deep copy data from.
             @:return a deep object copy of the array2d
+            @:raises TypeError if instance is provided and it is not an Array2D instance
         """
         raise NotImplementedError
 
@@ -97,16 +98,6 @@ class Array2D:
         """
         raise NotImplementedError
 
-    def _get_actual_index(self, row_index: int, column_index: int) -> int:
-        """ Private helper method for getting the actual index in the 1D array of the item at row_index, column_index
-            Usage: actual_index = _get_actual_index(row_index, column_index)
-            @:param row_index the desired row_index to set
-            @:param column_index the desired column_index to set
-            @:raises IndexError if the index is out of bounds
-            @:return index the index of the item
-        """
-        raise NotImplementedError
-
     def resize_columns(self, new_columns_len: int) -> None:
         """ Resize the length of the columns
             Usage: array2d.resize_columns(new_columns_len)
@@ -130,6 +121,7 @@ class Array2D:
             Usage: array1 == array2
             @:param other the instance to compare self to
             @:return true if the arrays are equal (deep check)
+            @:raises TypeError if other is not the right type to compare
         """
         raise NotImplementedError
 
@@ -138,6 +130,7 @@ class Array2D:
             Usage: if 3 in array2d:
             @:param item the desired item to check whether it's in the array
             @:return true if the array contains the item
+            @:raises TypeError if other is not the right type to compare
         """
         raise NotImplementedError
 

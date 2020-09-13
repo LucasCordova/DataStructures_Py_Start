@@ -17,7 +17,8 @@ class ListStack:
         """ Clone the stack
             Usage:  stack = ListStack.clone(instance)
             @:param instance an ListStack instance to deep copy data from.
-            @:return a deep object copy of the array
+            @:return a deep object copy of the stack
+            @:raises TypeError if instance is provided and it is not an Stack instance
         """
         raise NotImplementedError
 
@@ -63,6 +64,15 @@ class ListStack:
         """ Check whether the stack is empty
             Usage:   empty = stack.empty()
             @:return empty boolean as to whether the stack is empty
+        """
+        raise NotImplementedError
+
+    def __eq__(self, other) -> bool:
+        """ Equality operator ==
+            Usage: array1 == array2
+            @:param other the instance to compare self to
+            @:return true if the arrays are equal (deep check)
+            @:raises TypeError if other is not the right type to compare
         """
         raise NotImplementedError
 

@@ -21,6 +21,7 @@ class HashMap:
             Usage:  hash_map = HashMap.clone(instance)
             @:param instance an HashMap instance to deep copy data from.
             @:return a deep object copy of the hash map
+            @:raises TypeError if instance is provided and it is not an HashMap instance
         """
         raise NotImplementedError
 
@@ -61,9 +62,10 @@ class HashMap:
 
     def __eq__(self, other) -> bool:
         """ Equality operator ==
-            Usage: hash_map1 == hash_map2
+            Usage: array1 == array2
             @:param other the instance to compare self to
-            @:return true if the hash maps are equal (deep check)
+            @:return true if the arrays are equal (deep check)
+            @:raises TypeError if other is not the right type to compare
         """
         raise NotImplementedError
 

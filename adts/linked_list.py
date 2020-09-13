@@ -23,6 +23,7 @@ class LinkedList:
             Usage:  new_linked_list = LinkedList.clone(instance)
             @:param instance a LinkedList instance to deep copy data from.
             @:return a deep object copy of the linked list
+            @:raises TypeError if instance is provided and it is not an LinkedList instance
         """
         raise NotImplementedError
 
@@ -126,6 +127,15 @@ class LinkedList:
         """ Return a BackwardIterator to the tail of the linked list.
             Usage: backward_iterator = linked_list.backward_end()
             @:return backward_iterator iterator that is pointed to the beginning of the linked list.
+        """
+        raise NotImplementedError
+
+    def __eq__(self, other) -> bool:
+        """ Equality operator ==
+            Usage: array1 == array2
+            @:param other the instance to compare self to
+            @:return true if the arrays are equal (deep check)
+            @:raises TypeError if other is not the right type to compare
         """
         raise NotImplementedError
 
