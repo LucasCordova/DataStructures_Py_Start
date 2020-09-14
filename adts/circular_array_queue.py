@@ -88,6 +88,13 @@ class CircularArrayQueue:
         """
         raise NotImplementedError
 
+    def __len__(self) -> int:
+        """ len operator for getting length of the queue
+            Usage: length = len(queue)
+            @:return the length of the Queue (number of items on the queue)
+        """
+        raise NotImplementedError
+
     def __str__(self) -> str:
         """ Return a string representation of the data and structure
             Usage: print(queue):

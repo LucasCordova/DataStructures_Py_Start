@@ -62,6 +62,7 @@ class ListQueue:
         """
         raise NotImplementedError
 
+    @property
     def empty(self) -> bool:
         """ Check whether the queue is empty
             Usage:   empty = queue.empty
@@ -74,6 +75,13 @@ class ListQueue:
             Usage: array1 == array2
             @:param other the instance to compare self to
             @:return true if the arrays are equal (deep check)
+        """
+        raise NotImplementedError
+
+    def __len__(self) -> int:
+        """ len operator for getting length of the queue
+            Usage: length = len(queue)
+            @:return the length of the Queue (number of items on the queue)
         """
         raise NotImplementedError
 

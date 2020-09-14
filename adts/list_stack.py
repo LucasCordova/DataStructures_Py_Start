@@ -78,6 +78,13 @@ class ListStack:
         """
         raise NotImplementedError
 
+    def __len__(self) -> int:
+        """ len operator for getting length of the stack
+            Usage: length = len(stack)
+            @:return the length of the Stack (number of items on the stack)
+        """
+        raise NotImplementedError
+
     def __str__(self) -> str:
         """ Return a string representation of the data and structure
             Usage: print(stack):
