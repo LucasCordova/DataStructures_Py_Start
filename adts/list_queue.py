@@ -72,7 +72,6 @@ class ListQueue:
             Usage: array1 == array2
             @:param other the instance to compare self to
             @:return true if the arrays are equal (deep check)
-            @:raises TypeError if other is not the right type to compare
         """
         raise NotImplementedError
 

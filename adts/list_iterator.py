@@ -23,13 +23,12 @@ class ListIterator(ABC):
         """
         raise NotImplementedError
 
-    @abstractmethod
     def done(self) -> bool:
         """ Abstract method to return whether the iterator is done.
             Usage: done = iterator.done()
             @:return done boolean that determines whether the iterator is done
         """
-        pass
+        raise NotImplementedError
 
     @abstractmethod
     def move_next(self) -> None:
@@ -48,9 +47,24 @@ class ListIterator(ABC):
         pass
 
     @abstractmethod
+    def __iter__(self):
+        """ Iterator operator
+            Usage: for item in array:
+            @:return yields the item at index
+        """
+        pass
+
+    def __eq__(self, other) -> bool:
+        """ Equality operator ==
+            Usage: array1 == array2
+            @:param other the instance to compare self to
+            @:return true if the arrays are equal (deep check)
+        """
+        raise NotImplementedError
+
     def __str__(self) -> str:
         """ Abstract method to return a string representation of the data and structure
             Usage: print(iterator):
             @:return str the string representation of the data and structure
         """
-        pass
+        raise NotImplementedError

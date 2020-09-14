@@ -37,7 +37,6 @@ class Pair:
             Usage: pair1 == pair2
             @:param other the instance to compare self to
             @:return true if the pairs are equal (deep check)
-            @:raises TypeError if other is not the right type to compare
         """
         raise NotImplementedError
 

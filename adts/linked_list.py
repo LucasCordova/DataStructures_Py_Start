@@ -109,24 +109,10 @@ class LinkedList:
         """
         raise NotImplementedError
 
-    def forward_end(self) -> ForwardIterator:
-        """ Return a ForwardIterator to the end of the linked list.
-            Usage: forward_iterator = linked_list.forward_end()
-            @:return forward_iterator iterator that is pointed to the end of the linked list.
-        """
-        raise NotImplementedError
-
     def backward_begin(self) -> BackwardIterator:
         """ Return a BackwardIterator to the tail of the linked list.
             Usage: backward_iterator = linked_list.backward_begin()
             @:return backward_iterator iterator that is pointed to the tail of the linked list.
-        """
-        raise NotImplementedError
-
-    def backward_end(self) -> BackwardIterator:
-        """ Return a BackwardIterator to the tail of the linked list.
-            Usage: backward_iterator = linked_list.backward_end()
-            @:return backward_iterator iterator that is pointed to the beginning of the linked list.
         """
         raise NotImplementedError
 
@@ -143,7 +129,6 @@ class LinkedList:
             Usage: array1 == array2
             @:param other the instance to compare self to
             @:return true if the arrays are equal (deep check)
-            @:raises TypeError if other is not the right type to compare
         """
         raise NotImplementedError
 

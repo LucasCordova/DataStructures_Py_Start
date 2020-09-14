@@ -1,7 +1,7 @@
 import unittest
 
 
-class BackwardIteratorTest(unittest.TestCase):
+class IteratorsTest(unittest.TestCase):
     def setUp(self):
         pass
 

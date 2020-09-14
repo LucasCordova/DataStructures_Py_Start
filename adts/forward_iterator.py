@@ -36,18 +36,9 @@ class ForwardIterator(ListIterator):
         """
         raise NotImplementedError
 
-    def __eq__(self, other) -> bool:
-        """ Equality operator ==
-            Usage: array1 == array2
-            @:param other the instance to compare self to
-            @:return true if the arrays are equal (deep check)
-            @:raises TypeError if other is not the right type to compare
-        """
-        raise NotImplementedError
-
-    def __str__(self) -> str:
-        """ Return a string representation of the data and structure
-            Usage: print(iterator):
-            @:return str the string representation of the data and structure
+    def __iter__(self):
+        """ Iterator operator
+            Usage: for item in array:
+            @:return yields the item at index
         """
         raise NotImplementedError

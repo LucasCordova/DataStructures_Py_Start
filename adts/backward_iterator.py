@@ -15,13 +15,6 @@ class BackwardIterator(ListIterator):
         """
         raise NotImplementedError
 
-    def done(self) -> bool:
-        """ Return whether the iterator is done.
-            Usage: done = iterator.done()
-            @:return done boolean that determines whether the iterator is done
-        """
-        raise NotImplementedError
-
     def move_next(self) -> None:
         """ Move the iterator forward.
             Usage: iterator.move_next()
@@ -36,18 +29,9 @@ class BackwardIterator(ListIterator):
         """
         raise NotImplementedError
 
-    def __eq__(self, other) -> bool:
-        """ Equality operator ==
-            Usage: array1 == array2
-            @:param other the instance to compare self to
-            @:return true if the arrays are equal (deep check)
-            @:raises TypeError if other is not the right type to compare
-        """
-        raise NotImplementedError
-
-    def __str__(self) -> str:
-        """ Return a string representation of the data and structure
-            Usage: print(iterator):
-            @:return str the string representation of the data and structure
+    def __iter__(self):
+        """ Iterator operator
+            Usage: for item in array:
+            @:return yields the item at index
         """
         raise NotImplementedError
