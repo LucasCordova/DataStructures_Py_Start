@@ -49,6 +49,7 @@ class LinkedList:
             @:param before_item the item that the user wishes to insert before
             @:param new_item the desired item to insert
             @:return none
+            @:raises KeyError if before_item is not found
         """
         raise NotImplementedError
 
@@ -58,6 +59,7 @@ class LinkedList:
             @:param before_item the item that the user wishes to insert before
             @:param new_item the desired item to insert
             @:return none
+            @:raises KeyError if before_item is not found
         """
         raise NotImplementedError
 
@@ -66,7 +68,6 @@ class LinkedList:
             Note: this method should be used for debug and test purposes only.
             Usage: head = linked_list.get_head()
             @:return head the ListNode instance representing the head of the linked list
-            @:raises IndexError if the list is empty
         """
         raise NotImplementedError
 
@@ -75,7 +76,6 @@ class LinkedList:
             Note: this method should be used for debug and test purposes only.
             Usage: tail = linked_list.get_tail()
             @:return tail the ListNode instance representing the tail of the linked list
-            @:raises IndexError if the list is empty
         """
         raise NotImplementedError
 
@@ -127,6 +127,14 @@ class LinkedList:
         """ Return a BackwardIterator to the tail of the linked list.
             Usage: backward_iterator = linked_list.backward_end()
             @:return backward_iterator iterator that is pointed to the beginning of the linked list.
+        """
+        raise NotImplementedError
+
+    def extract(self, item):
+        """ Extract an item from the Linked List
+            @:param item the item to remove
+            @:return: None
+            @:raises: KeyError if the item is not found
         """
         raise NotImplementedError
 
