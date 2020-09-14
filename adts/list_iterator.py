@@ -16,16 +16,18 @@ class ListIterator(ABC):
         """
         raise NotImplementedError
 
+    @property
     def current(self):
         """ Return the item currently pointed to by the iterator.
-            Usage: item = iterator.current()
+            Usage: item = iterator.current
             @:return item the item stored where the iterator is pointed at
         """
         raise NotImplementedError
 
+    @property
     def done(self) -> bool:
         """ Abstract method to return whether the iterator is done.
-            Usage: done = iterator.done()
+            Usage: done = iterator.done
             @:return done boolean that determines whether the iterator is done
         """
         raise NotImplementedError

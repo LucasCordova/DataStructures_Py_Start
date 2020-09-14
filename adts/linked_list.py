@@ -63,34 +63,38 @@ class LinkedList:
         """
         raise NotImplementedError
 
-    def get_head(self) -> ListNode:
+    @property
+    def head(self) -> ListNode:
         """ Return the ListNode instance pointing at the head of the linked list.
             Note: this method should be used for debug and test purposes only.
-            Usage: head = linked_list.get_head()
+            Usage: head = linked_list.head
             @:return head the ListNode instance representing the head of the linked list
         """
         raise NotImplementedError
 
-    def get_tail(self) -> ListNode:
+    @property
+    def tail(self) -> ListNode:
         """ Return the ListNode instance pointing at the tail of the linked list.
             Note: this method should be used for debug and test purposes only.
-            Usage: tail = linked_list.get_tail()
+            Usage: tail = linked_list.tail
             @:return tail the ListNode instance representing the tail of the linked list
         """
         raise NotImplementedError
 
-    def get_first_item(self):
+    @property
+    def first(self):
         """ Return the item at the head of the linked list.
-            Usage: first_item = linked_list.get_first_item()
-            @:return first_item the item stored in the head of the list
+            Usage: first_item = linked_list.first
+            @:return first the item stored in the head of the list
             @:raises IndexError if the list is empty
         """
         raise NotImplementedError
 
-    def get_last_item(self):
+    @property
+    def last(self):
         """ Return the item at the tail of the linked list.
-            Usage: last_item = linked_list.get_last_item()
-            @:return last_item the item stored in the tail of the list
+            Usage: last_item = linked_list.last
+            @:return last the item stored in the tail of the list
             @:raises IndexError if the list is empty
         """
         raise NotImplementedError
@@ -102,16 +106,18 @@ class LinkedList:
         """
         raise NotImplementedError
 
+    @property
     def forward_begin(self) -> ForwardIterator:
         """ Return a ForwardIterator to the head of the linked list.
-            Usage: forward_iterator = linked_list.forward_begin()
+            Usage: forward_iterator = linked_list.forward_begin
             @:return forward_iterator iterator that is pointed to the head of the linked list.
         """
         raise NotImplementedError
 
+    @property
     def backward_begin(self) -> BackwardIterator:
         """ Return a BackwardIterator to the tail of the linked list.
-            Usage: backward_iterator = linked_list.backward_begin()
+            Usage: backward_iterator = linked_list.backward_begin
             @:return backward_iterator iterator that is pointed to the tail of the linked list.
         """
         raise NotImplementedError

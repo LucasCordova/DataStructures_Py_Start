@@ -84,17 +84,19 @@ class Array2D:
         """
         raise NotImplementedError
 
-    def get_rows_len(self) -> int:
-        """ len method for the length of the rows
-            Usage: row_length = array2d.get_rows_len()
-            @:return the length of the rows
+    @property
+    def columns_len(self):
+        """ len method for the length of the columns
+                Usage: column_length = array2d.columns_len
+                @:return the length of the columns
         """
         raise NotImplementedError
 
-    def get_columns_len(self) -> int:
-        """ len method for the length of the columns
-                Usage: column_length = array2d.get_columns_len()
-                @:return the length of the columns
+    @property
+    def rows_len(self) -> int:
+        """ len method for the length of the rows
+            Usage: row_length = array2d.rows_len
+            @:return the length of the rows
         """
         raise NotImplementedError
 

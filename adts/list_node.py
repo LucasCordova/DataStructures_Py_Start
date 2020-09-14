@@ -13,47 +13,53 @@ class ListNode:
         """
         raise NotImplementedError
 
-    def get_item(self):
-        """ Getter for the item
-            Usage: item = node.get_item()
+    @property
+    def item(self):
+        """ Property for the item
+            Usage: item = node.item
             @:return the item stored in the node
         """
         raise NotImplementedError
 
-    def set_item(self, item) -> None:
+    @item.setter
+    def item(self, item) -> None:
         """ Setter for the item
-            Usage: node.set_item(item)
+            Usage: node.item = item
             @:param item the item to store in the node
             @:return none
         """
         raise NotImplementedError
 
-    def get_previous_node(self):
-        """ Getter for the previous node
-            Usage: previous_node = node.get_previous_node()
+    @property
+    def previous(self):
+        """ Property for the previous node
+            Usage: previous_node = node.previous
             @:return the previous node of the node
         """
         raise NotImplementedError
 
-    def set_previous_node(self, previous_node) -> None:
+    @previous.setter
+    def previous(self, previous_node) -> None:
         """ Setter for the previous node
-            Usage: node.set_previous_node(previous_node)
+            Usage: node.previous = previous_node
             @:param previous_node the node's previous_node instance
             @:return none
         """
         raise NotImplementedError
 
-    def get_next_node(self):
-        """ Getter for the next node
-            Usage: next_node = node.get_next_node()
+    @property
+    def next(self):
+        """ Property for the next node
+            Usage: next_node = node.next
             @:return the next node of the node
         """
         raise NotImplementedError
 
-    def set_next_node(self, next_node) -> None:
+    @next.setter
+    def next(self, next_node) -> None:
         """ Setter for the next node
-            Usage: node.set_next_node(next_node)
-            @:param previous_node the node's previous_node instance
+            Usage: node.next = next_node
+            @:param next_node the node's next_node instance
             @:return none
         """
         raise NotImplementedError
