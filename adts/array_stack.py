@@ -3,12 +3,11 @@ class ArrayStack:
     """ Class ArrayStack - representing a fixed-size stack using a 1D Array
     """
 
-    def __init__(self, size: int, instance=None) -> None:
+    def __init__(self, max_size: int = 0, instance=None) -> None:
         """ Constructor
             Usage:  stack = ArrayStack(10)
             @:param size the desired size of the stack
             @:param instance an optional ArrayStack instance to deep copy data from.
-                Should only copy the smaller of size or len(instance) items
             @:return none
             @:raises TypeError if instance is provided and it is not an ArrayStack instance
         """
@@ -48,40 +47,44 @@ class ArrayStack:
         """
         raise NotImplementedError
 
+    @property
     def top(self):
         """ Get the item at the top of the stack
-                Usage:   item = stack.top()
+                Usage:   item = stack.top
                 @:return item that is at the top of the stack
                 @:raises IndexError if the stack is empty
         """
         raise NotImplementedError
 
+    @property
     def size(self) -> int:
         """ Get the size of the number of items on the stack
-                Usage:   size = stack.size()
+                Usage:   size = stack.size
                 @:return size the number of items on the stack
         """
         raise NotImplementedError
 
+    @property
     def full(self) -> bool:
         """ Check whether the stack is full
-                Usage:   full = stack.full()
+                Usage:   full = stack.full
                 @:return full boolean as to whether the stack is full
         """
         raise NotImplementedError
 
+    @property
     def empty(self) -> bool:
         """ Check whether the stack is empty
-                Usage:   empty = stack.empty()
+                Usage:   empty = stack.empty
                 @:return empty boolean as to whether the stack is empty
         """
         raise NotImplementedError
 
     def __eq__(self, other) -> bool:
         """ Equality operator ==
-            Usage: array1 == array2
+            Usage: stack1 == stack2
             @:param other the instance to compare self to
-            @:return true if the arrays are equal (deep check)
+            @:return true if the stacks are equal (deep check)
         """
         raise NotImplementedError
 

@@ -45,24 +45,26 @@ class ListQueue:
         """
         raise NotImplementedError
 
+    @property
     def front(self):
         """ Get the item at the front of the queue
-            Usage:   item = queue.front()
+            Usage:   item = queue.front
             @:return item that is in the front
             @:raises IndexError if the queue is empty
         """
         raise NotImplementedError
 
+    @property
     def size(self) -> int:
         """ Get the size of the number of items on the queue
-            Usage:   size = queue.size()
+            Usage:   size = queue.size
             @:return size the number of items on the queue
         """
         raise NotImplementedError
 
     def empty(self) -> bool:
         """ Check whether the queue is empty
-            Usage:   empty = queue.empty()
+            Usage:   empty = queue.empty
             @:return empty boolean as to whether the queue is empty
         """
         raise NotImplementedError

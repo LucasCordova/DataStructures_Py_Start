@@ -8,7 +8,6 @@ class Array:
             Usage:  array = Array(10)
             @:param size the desired size of the Array
             @:param instance an optional Array instance to deep copy data from.
-                Should only copy the smaller of size or len(instance) items
             @:return none
             @:raises TypeError if instance is provided and it is not an Array instance
         """

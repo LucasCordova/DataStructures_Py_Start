@@ -45,24 +45,27 @@ class ListStack:
         """
         raise NotImplementedError
 
+    @property
     def top(self):
         """ Get the item at the top of the stack
-            Usage:   item = stack.top()
+            Usage:   item = stack.top
             @:return item that is at the top of the stack
             @:raises IndexError if the stack is empty
         """
         raise NotImplementedError
 
+    @property
     def size(self) -> int:
         """ Get the size of the number of items on the stack
-            Usage:   size = stack.size()
+            Usage:   size = stack.size
             @:return size the number of items on the stack
         """
         raise NotImplementedError
 
+    @property
     def empty(self) -> bool:
         """ Check whether the stack is empty
-            Usage:   empty = stack.empty()
+            Usage:   empty = stack.empty
             @:return empty boolean as to whether the stack is empty
         """
         raise NotImplementedError

@@ -130,11 +130,32 @@ class LinkedList:
         """
         raise NotImplementedError
 
+    @property
+    def empty(self) -> bool:
+        """ Property to determine whether the list is empty
+            @:return bool whether the list is empty
+        """
+        raise NotImplementedError
+
+    def remove_first(self):
+        """ Remove the first item in the linked list
+            Usage: linked_list.remove_first()
+            @:raises IndexError if the list is empty
+        """
+        raise NotImplementedError
+
+    def remove_last(self):
+        """ Remove the last item in the linked list
+            Usage: linked_list.remove_last()
+            @:raises IndexError if the list is empty
+        """
+        raise NotImplementedError
+
     def __eq__(self, other) -> bool:
         """ Equality operator ==
-            Usage: array1 == array2
+            Usage: list1 == list2
             @:param other the instance to compare self to
-            @:return true if the arrays are equal (deep check)
+            @:return true if the lists are equal (deep check)
         """
         raise NotImplementedError
 

@@ -3,12 +3,11 @@ class CircularArrayQueue:
     """ Class CircularArrayQueue - representing a circular array queue using a 1D Array
     """
 
-    def __init__(self, size: int, instance=None) -> None:
+    def __init__(self, max_size: int = 0, instance=None) -> None:
         """ Constructor
             Usage:  queue = CircularArrayQueue(10)
             @:param size the desired size of the queue
             @:param instance an optional CircularArrayQueue instance to deep copy data from.
-                Should only copy the smaller of size or len(instance) items
             @:return none
             @:raises TypeError if instance is provided and it is not an CircularArrayQueue instance
         """
@@ -48,31 +47,35 @@ class CircularArrayQueue:
         """
         raise NotImplementedError
 
+    @property
     def front(self):
         """ Get the item at the front of the queue
-            Usage:   item = queue.front()
+            Usage:   item = queue.front
             @:return item that is in the front
             @:raises IndexError if the queue is empty
         """
         raise NotImplementedError
 
+    @property
     def size(self) -> int:
         """ Get the size of the number of items on the queue
-            Usage:   size = queue.size()
+            Usage:   size = queue.size
             @:return size the number of items on the queue
         """
         raise NotImplementedError
 
+    @property
     def full(self) -> bool:
         """ Check whether the queue is full
-            Usage:   full = queue.full()
+            Usage:   full = queue.full
             @:return full boolean as to whether the queue is full
         """
         raise NotImplementedError
 
+    @property
     def empty(self) -> bool:
         """ Check whether the queue is empty
-            Usage:   empty = queue.empty()
+            Usage:   empty = queue.empty
             @:return empty boolean as to whether the queue is empty
         """
         raise NotImplementedError
