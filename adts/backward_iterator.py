@@ -6,7 +6,7 @@ class BackwardIterator(ListIterator):
     """ Class BackwardIterator - concrete child class of ListIterator.
     """
 
-    def init(self, node: ListNode) -> None:
+    def __init__(self, node: ListNode) -> None:
         """ Constructor for the ForwardIterator base class
             Usage:  iterator = ForwardIterator(list_node).
             @:param node the node that the iterator will point to
@@ -33,5 +33,19 @@ class BackwardIterator(ListIterator):
         """ Iterator operator
             Usage: for item in array:
             @:return yields the item at index
+        """
+        raise NotImplementedError
+
+    def __eq__(self, other) -> bool:
+        """ Equality method - should return true if the instances are both pointing to the same node and are done
+            Usage: iter1 == iter2
+            @:param other the instance to compare to
+        """
+        raise NotImplementedError
+
+    def __str__(self) -> str:
+        """Str method to return a string representation of the data and structure
+            Usage: print(iterator):
+            @:return str the string representation of the data and structure
         """
         raise NotImplementedError

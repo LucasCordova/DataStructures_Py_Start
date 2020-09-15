@@ -65,7 +65,7 @@ class ListIterator(ABC):
         raise NotImplementedError
 
     def __str__(self) -> str:
-        """ Abstract method to return a string representation of the data and structure
+        """Str method to return a string representation of the data and structure
             Usage: print(iterator):
             @:return str the string representation of the data and structure
         """
