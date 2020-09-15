@@ -33,12 +33,11 @@ class Array2D:
             """
             raise NotImplementedError
 
-    def __init__(self, row_len: int, column_len: int, instance=None) -> None:
+    def __init__(self, row_len: int = 0, column_len: int = 0, instance=None) -> None:
         """ Constructor
             Usage:  array = Array(10)
             @:param size the desired size of the Array
             @:param instance an optional Array2D instance to deep copy data from.
-                Should only copy the smaller of the column and row size
             @:return none
             @:raises TypeError if instance is provided and it is not a LinkedList instance
         """
