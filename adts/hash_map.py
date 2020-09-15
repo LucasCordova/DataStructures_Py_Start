@@ -4,14 +4,12 @@ class HashMap:
         buckets are based on an Array and the chains are based on LinkedLists
     """
 
-    def __init__(self, size: int, instance=None) -> None:
+    def __init__(self, max_size: int, hash_function) -> None:
         """ Constructor
             Usage:  hash_map = hash_map(23, hash_function)
-            @:param size the desired size of the HashMap
-            @:param instance an optional HashMap instance to deep copy data from.
-                Should only copy the smaller of size or len(instance) items
+            @:param max_size the desired max size of the HashMap
+            @:param hash_function the desired hash function
             @:return none
-            @:raises TypeError if instance is provided and it is not an HashMap instance
         """
         raise NotImplementedError
 
@@ -27,10 +25,10 @@ class HashMap:
 
     def __getitem__(self, key):
         """ Bracket operator for getting an item value
-            Usage: val = array[0]
+            Usage: item = array[key]
             @:param key the key of the desired value
             @:return the item value associated with the key
-            @:raises IndexError if the key is not present in the hashmap
+            @:raises KeyError if the key is not present in the hashmap
         """
         raise NotImplementedError
 
@@ -39,7 +37,7 @@ class HashMap:
             Usage: hash_map[key] = val
             @:param key the desired key set
             @:param value the value associated with the key
-            @:raises IndexError if key is already present in the hash map
+            @:raises KeyError if key is already present in the hash map
             @:return none
         """
         raise NotImplementedError
@@ -81,6 +79,7 @@ class HashMap:
             Usage: del hash_map[key]
             @:param key the desired key to delete
             @:return none
+            @:raises KeyError if the key is not found
         """
         raise NotImplementedError
 

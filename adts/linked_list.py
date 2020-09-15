@@ -151,6 +151,14 @@ class LinkedList:
         """
         raise NotImplementedError
 
+    def __contains__(self, item) -> bool:
+        """ Equality operator ==
+            Usage: if item in linked_list:
+            @:param item the item to search for
+            @:return true if the linked list contains the item
+        """
+        raise NotImplementedError
+
     def __eq__(self, other) -> bool:
         """ Equality operator ==
             Usage: list1 == list2
