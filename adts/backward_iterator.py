@@ -4,6 +4,10 @@ from adts.list_node import ListNode
 
 class BackwardIterator(ListIterator):
     """ Class BackwardIterator - concrete child class of ListIterator.
+            Stipulations:
+            1. Must adhere to the docstring requirements per method, including raising
+                raising appropriate exceptions where indicated.
+            2. Must achieve a minimum of 92% code coverage through unit testing.
     """
 
     def __init__(self, node: ListNode) -> None:

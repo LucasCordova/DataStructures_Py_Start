@@ -1,5 +1,10 @@
 class Pair:
     """ Class Pair - representing a Pair as a Tuple
+            Stipulations:
+            1. Must use a Python tuple as the internal data structure.
+            2. Must adhere to the docstring requirements per method, including raising
+               raising appropriate exceptions where indicated.
+            3. Must achieve a minimum of 92% code coverage through unit testing.
     """
 
     def __init__(self, first=None, second=None, instance=None) -> None:

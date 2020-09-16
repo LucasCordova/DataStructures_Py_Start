@@ -6,6 +6,11 @@ from adts.list_node import ListNode
 class LinkedList:
     """ Class LinkedList - representing an unordered linked list
         Depends on ListNode class to store the items, previous, and next nodes.
+            Stipulations:
+            1. Must manage the linked list using only two ListNode objects (_head and _tail)
+            2. Must adhere to the docstring requirements per method, including raising
+               raising appropriate exceptions where indicated.
+            3. Must achieve a minimum of 92% code coverage through unit testing.
     """
 
     def __init__(self, instance=None) -> None:

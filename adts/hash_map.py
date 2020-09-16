@@ -2,6 +2,12 @@
 class HashMap:
     """ Class HashMap - representing a HashMap (dictionary) where the
         buckets are based on an Array and the chains are based on LinkedLists
+            Stipulations:
+            1. Must use an Array<LinkedList<Pair>> as the internal data structure from the
+               Array, LinkedList and Pair assignments.
+            2. Must adhere to the docstring requirements per method, including raising
+               raising appropriate exceptions where indicated.
+            3. Must achieve a minimum of 92% code coverage through unit testing.
     """
 
     def __init__(self, max_size: int, hash_function) -> None:

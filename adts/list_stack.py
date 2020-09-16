@@ -1,6 +1,11 @@
 
 class ListStack:
     """ Class ListStack - representing a stack using a LinkedList
+            Stipulations:
+            1. Must use a LinkedList as the internal data structure from the LinkedList assignment.
+            2. Must adhere to the docstring requirements per method, including raising
+               raising appropriate exceptions where indicated.
+            3. Must achieve a minimum of 92% code coverage through unit testing.
     """
 
     def __init__(self, instance=None) -> None:

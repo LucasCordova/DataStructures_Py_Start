@@ -5,6 +5,11 @@ from adts.list_node import ListNode
 
 class ListIterator(ABC):
     """ Class ListIterator - base class representing an iterator to a node in the linked list.
+            Stipulations:
+            1. Must manage iteration on a LinkedList using a ListNode object.
+            2. Must adhere to the docstring requirements per method, including raising
+               raising appropriate exceptions where indicated.
+            3. Must achieve a minimum of 92% code coverage through unit testing.
     """
 
     def __init__(self, node: ListNode) -> None:

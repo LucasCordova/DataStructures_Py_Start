@@ -1,6 +1,12 @@
 
 class ArrayStack:
     """ Class ArrayStack - representing a fixed-size stack using a 1D Array
+                Stipulations:
+                1. Must use an Array object as the internal data structure from the Array assignment.
+                2. Must adhere to the docstring requirements per method, including raising
+                   raising appropriate exceptions where indicated.
+                               3. Must achieve a minimum of 92% code coverage through unit testing.
+
     """
 
     def __init__(self, max_size: int = 0, instance=None) -> None:

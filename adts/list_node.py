@@ -1,6 +1,10 @@
 
 class ListNode:
     """ ListNode - represents a node in a linked list
+            Stipulations:
+            1. Must adhere to the docstring requirements per method, including raising
+               raising appropriate exceptions where indicated.
+            2. Must achieve a minimum of 92% code coverage through unit testing.
     """
 
     def __init__(self, item, previous_node=None, next_node=None) -> None:

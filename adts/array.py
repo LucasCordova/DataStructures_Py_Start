@@ -1,6 +1,10 @@
 
 class Array:
     """ Class Array - representing 1D data using a List
+        Stipulations:
+            1. Must use a sized Python list as the internal data structure
+            2. Must adhere to the docstring requirements per method, including raising
+               raising appropriate exceptions where indicated.
     """
 
     def __init__(self, size: int, instance=None) -> None:

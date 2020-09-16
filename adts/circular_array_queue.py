@@ -1,6 +1,12 @@
 
 class CircularArrayQueue:
     """ Class CircularArrayQueue - representing a circular array queue using a 1D Array
+            Stipulations:
+            1. Must use an Array object as the internal data structure.
+            2. Storage must wrap-around the array.
+            3. Must adhere to the docstring requirements per method, including raising
+               raising appropriate exceptions where indicated.
+            4. Must achieve a minimum of 92% code coverage through unit testing.
     """
 
     def __init__(self, max_size: int = 0, instance=None) -> None:

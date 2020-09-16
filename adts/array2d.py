@@ -1,5 +1,10 @@
 class Array2D:
     """ Class Array2D - representing 2D data using a 1D array
+        Stipulations:
+            1. Must use an Array object as the internal data structure from the Array assignment.
+            2. Must adhere to the docstring requirements per method, including raising
+               raising appropriate exceptions where indicated.
+            3. Must achieve a minimum of 92% code coverage through unit testing.
     """
 
     class _Row:
