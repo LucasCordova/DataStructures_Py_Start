@@ -1,16 +1,17 @@
 
 class Array:
-    """ Class Array - representing 1D data using a List
+    """ Class Array - representing 1D data using a Python List
         Stipulations:
             1. Must use a sized Python list as the internal data structure
             2. Must adhere to the docstring requirements per method, including raising
                raising appropriate exceptions where indicated.
+           3. Must achieve a minimum of 92% code coverage through unit testing.
     """
 
-    def __init__(self, size: int, instance=None) -> None:
+    def __init__(self, size: int = 0, instance=None) -> None:
         """ Constructor
             Usage:  array = Array(10)
-            @:param size the desired size of the Array
+            @:param size the desired size of the Array (optional if providing instance)
             @:param instance an optional Array instance to deep copy data from.
             @:return none
             @:raises TypeError if instance is provided and it is not an Array instance
