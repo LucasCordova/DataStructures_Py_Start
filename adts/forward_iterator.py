@@ -40,14 +40,14 @@ class ForwardIterator(ListIterator):
         """
         raise NotImplementedError
 
-    def __iter__(self):
+    def __iter__(self) -> Any:
         """ Iterator operator
             Usage: for item in array:
             @:return yields the item at index
         """
         raise NotImplementedError
 
-    def __eq__(self, other) -> bool:
+    def __eq__(self, other: 'ForwardIterator') -> bool:
         """ Equality method - should return true if the instances are both pointing to the same node and are done
             Usage: iter1 == iter2
             @:param other the instance to compare to

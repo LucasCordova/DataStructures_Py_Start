@@ -8,7 +8,7 @@ class ListStack:
             3. Must achieve a minimum of 92% code coverage through unit testing.
     """
 
-    def __init__(self, instance=None) -> None:
+    def __init__(self, instance: ListStack = None) -> None:
         """ Constructor
             Usage:  stack = ListStack()
             @:param instance an optional ListStack instance to deep copy data from.
@@ -18,7 +18,7 @@ class ListStack:
         raise NotImplementedError
 
     @staticmethod
-    def clone(instance):
+    def clone(instance: ListStack) -> ListStack:
         """ Clone the stack
             Usage:  stack = ListStack.clone(instance)
             @:param instance an ListStack instance to deep copy data from.
@@ -27,7 +27,7 @@ class ListStack:
         """
         raise NotImplementedError
 
-    def push(self, item):
+    def push(self, item: Any) -> None:
         """ Push an item onto the stack
             Usage:   stack.push(item)
             @:param item to push
@@ -35,7 +35,7 @@ class ListStack:
         """
         raise NotImplementedError
 
-    def pop(self):
+    def pop(self) -> ListStack:
         """ Pop an item from the stack and return the item
             Usage:   item = stack.pop()
             @:return item that is popped
@@ -51,7 +51,7 @@ class ListStack:
         raise NotImplementedError
 
     @property
-    def top(self):
+    def top(self) -> Any:
         """ Get the item at the top of the stack
             Usage:   item = stack.top
             @:return item that is at the top of the stack
@@ -75,7 +75,7 @@ class ListStack:
         """
         raise NotImplementedError
 
-    def __eq__(self, other) -> bool:
+    def __eq__(self, other: ListStack) -> bool:
         """ Equality operator ==
             Usage: array1 == array2
             @:param other the instance to compare self to

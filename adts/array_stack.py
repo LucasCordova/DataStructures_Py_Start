@@ -9,7 +9,7 @@ class ArrayStack:
 
     """
 
-    def __init__(self, max_size: int = 0, instance=None) -> None:
+    def __init__(self, max_size: int = 0, instance: 'ArrayStack'=None) -> None:
         """ Constructor
             Usage:  stack = ArrayStack(10)
             @:param size the desired size of the stack
@@ -20,7 +20,7 @@ class ArrayStack:
         raise NotImplementedError
 
     @staticmethod
-    def clone(instance):
+    def clone(instance: ArrayStack):
         """ Clone the stack
                 Usage:  stack = ArrayStack.clone(instance)
                 @:param instance an ArrayStack instance to deep copy data from.
@@ -29,7 +29,7 @@ class ArrayStack:
         """
         raise NotImplementedError
 
-    def push(self, item):
+    def push(self, item: Any) -> None:
         """ Push an item onto the stack
                 Usage:   stack.push(item)
                 @:param item to enqueue
@@ -38,7 +38,7 @@ class ArrayStack:
         """
         raise NotImplementedError
 
-    def pop(self):
+    def pop(self) -> Any:
         """ Pop an item from the stack and return the item
                 Usage:   item = stack.pop()
                 @:return item that is popped
@@ -54,7 +54,7 @@ class ArrayStack:
         raise NotImplementedError
 
     @property
-    def top(self):
+    def top(self) -> Any:
         """ Get the item at the top of the stack
                 Usage:   item = stack.top
                 @:return item that is at the top of the stack
@@ -86,7 +86,7 @@ class ArrayStack:
         """
         raise NotImplementedError
 
-    def __eq__(self, other) -> bool:
+    def __eq__(self, other: 'ArrayStack') -> bool:
         """ Equality operator ==
             Usage: stack1 == stack2
             @:param other the instance to compare self to

@@ -20,7 +20,7 @@ class HashMap:
         raise NotImplementedError
 
     @staticmethod
-    def clone(instance):
+    def clone(instance: HashMap):
         """ Clone the hash map
             Usage:  hash_map = HashMap.clone(instance)
             @:param instance an HashMap instance to deep copy data from.
@@ -29,7 +29,7 @@ class HashMap:
         """
         raise NotImplementedError
 
-    def __getitem__(self, key):
+    def __getitem__(self, key: Any) -> Any:
         """ Bracket operator for getting an item value
             Usage: item = array[key]
             @:param key the key of the desired value
@@ -38,7 +38,7 @@ class HashMap:
         """
         raise NotImplementedError
 
-    def __setitem__(self, key, value) -> None:
+    def __setitem__(self, key: Any, value: Any) -> None:
         """ Bracket operator for inserting a key/value pair into the hash map
             Usage: hash_map[key] = val
             @:param key the desired key set
@@ -64,7 +64,7 @@ class HashMap:
         """
         raise NotImplementedError
 
-    def __eq__(self, other) -> bool:
+    def __eq__(self, other: 'HashMap') -> bool:
         """ Equality operator ==
             Usage: array1 == array2
             @:param other the instance to compare self to
@@ -80,7 +80,7 @@ class HashMap:
         """
         raise NotImplementedError
 
-    def __delitem__(self, key) -> None:
+    def __delitem__(self, key: Any) -> None:
         """ Delete an item in the hash map. Does not resize the buckets, but does remove the associated chain link.
             Usage: del hash_map[key]
             @:param key the desired key to delete
@@ -89,7 +89,7 @@ class HashMap:
         """
         raise NotImplementedError
 
-    def __contains__(self, key) -> bool:
+    def __contains__(self, key: Any) -> bool:
         """ Contains operator (in)
             Usage: if 3 in hash_map:
             @:param key the desired key to check whether it's in the hash_map
@@ -111,21 +111,21 @@ class HashMap:
         """
         raise NotImplementedError
 
-    def keys(self):
+    def keys(self) -> list:
         """ Returns a view object. The view object contains the keys of the dictionary, as a list.
             Usage: keys = hash_map.keys()
             @:return list a list containing the keys of the dictionary
         """
         raise NotImplementedError
 
-    def values(self):
+    def values(self) -> list:
         """ Returns a view object. The view object contains the values of the dictionary, as a list.
             Usage: values = hash_map.values()
             @:return list a list containing the values of the dictionary
         """
         raise NotImplementedError
 
-    def items(self):
+    def items(self) -> list:
         """ Returns a view object. The view object contains the key-value pairs of the dictionary, as tuples in a list.
             Usage: items = hash_map.items()
             @:return items as a tuples in a list of the key/value pairs of the dictionary

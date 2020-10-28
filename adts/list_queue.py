@@ -8,7 +8,7 @@ class ListQueue:
             3. Must achieve a minimum of 92% code coverage through unit testing.
     """
 
-    def __init__(self, instance=None) -> None:
+    def __init__(self, instance: ListQueue = None) -> None:
         """ Constructor
             Usage:  queue = ListQueue()
             @:param instance an optional ListQueue instance to deep copy data from.
@@ -18,7 +18,7 @@ class ListQueue:
         raise NotImplementedError
 
     @staticmethod
-    def clone(instance):
+    def clone(instance: ListQueue) -> ListQueue:
         """ Clone the queue
             Usage:  queue = ListQueue.clone(instance)
             @:param instance an ListQueue instance to deep copy data from.
@@ -27,7 +27,7 @@ class ListQueue:
         """
         raise NotImplementedError
 
-    def enqueue(self, item):
+    def enqueue(self, item: Any) -> None:
         """ Enqueue an item onto the queue
             Usage:   queue.enqueue(item)
             @:param item to enqueue
@@ -35,7 +35,7 @@ class ListQueue:
         """
         raise NotImplementedError
 
-    def dequeue(self):
+    def dequeue(self) -> Any:
         """ Dequeue an item from the queue and return the item
             Usage:   item = queue.dequeue()
             @:return item that is dequeued
@@ -51,7 +51,7 @@ class ListQueue:
         raise NotImplementedError
 
     @property
-    def front(self):
+    def front(self) -> Any:
         """ Get the item at the front of the queue
             Usage:   item = queue.front
             @:return item that is in the front
@@ -75,7 +75,7 @@ class ListQueue:
         """
         raise NotImplementedError
 
-    def __eq__(self, other) -> bool:
+    def __eq__(self, other: ListQueue) -> bool:
         """ Equality operator ==
             Usage: array1 == array2
             @:param other the instance to compare self to

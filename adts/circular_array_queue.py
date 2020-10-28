@@ -9,7 +9,7 @@ class CircularArrayQueue:
             4. Must achieve a minimum of 92% code coverage through unit testing.
     """
 
-    def __init__(self, max_size: int = 0, instance=None) -> None:
+    def __init__(self, max_size: int = 0, instance: 'CircularArrayQueue'=None) -> None:
         """ Constructor
             Usage:  queue = CircularArrayQueue(10)
             @:param size the desired size of the queue
@@ -20,7 +20,7 @@ class CircularArrayQueue:
         raise NotImplementedError
 
     @staticmethod
-    def clone(instance):
+    def clone(instance: CircularArrayQueue):
         """ Clone the queue
             Usage:  queue = CircularArrayQueue.clone(instance)
             @:param instance an CircularArrayQueue instance to deep copy data from.
@@ -29,7 +29,7 @@ class CircularArrayQueue:
         """
         raise NotImplementedError
 
-    def enqueue(self, item):
+    def enqueue(self, item: Any) -> None:
         """ Enqueue an item onto the queue
             Usage:   queue.enqueue(item)
             @:param item to enqueue
@@ -38,7 +38,7 @@ class CircularArrayQueue:
         """
         raise NotImplementedError
 
-    def dequeue(self):
+    def dequeue(self) -> Any:
         """ Dequeue an item from the queue and return the item
             Usage:   item = queue.dequeue()
             @:return item that is dequeued
@@ -54,7 +54,7 @@ class CircularArrayQueue:
         raise NotImplementedError
 
     @property
-    def front(self):
+    def front(self) -> Any:
         """ Get the item at the front of the queue
             Usage:   item = queue.front
             @:return item that is in the front
@@ -86,7 +86,7 @@ class CircularArrayQueue:
         """
         raise NotImplementedError
 
-    def __eq__(self, other) -> bool:
+    def __eq__(self, other: 'CircularArrayQueue') -> bool:
         """ Equality operator ==
             Usage: array1 == array2
             @:param other the instance to compare self to

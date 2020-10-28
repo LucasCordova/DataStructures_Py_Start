@@ -22,7 +22,7 @@ class ListIterator(ABC):
         raise NotImplementedError
 
     @property
-    def current(self):
+    def current(self) -> Any:
         """ Return the item currently pointed to by the iterator.
             Usage: item = iterator.current
             @:return item the item stored where the iterator is pointed at
@@ -61,7 +61,7 @@ class ListIterator(ABC):
         """
         pass
 
-    def __eq__(self, other) -> bool:
+    def __eq__(self, other: 'ListIterator') -> bool:
         """ Equality operator ==
             Usage: array1 == array2
             @:param other the instance to compare self to

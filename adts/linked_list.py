@@ -13,7 +13,7 @@ class LinkedList:
             3. Must achieve a minimum of 92% code coverage through unit testing.
     """
 
-    def __init__(self, instance=None) -> None:
+    def __init__(self, instance:'LinkedList'=None) -> None:
         """ Constructor for the LinkedList
             Usage:  linked_list = LinkedList()
             @:param instance an optional instance of a LinkedList to deep copy from
@@ -23,7 +23,7 @@ class LinkedList:
         raise NotImplementedError
 
     @staticmethod
-    def clone(instance):
+    def clone(instance: LinkedList):
         """ Clone the LinkedList
             Usage:  new_linked_list = LinkedList.clone(instance)
             @:param instance a LinkedList instance to deep copy data from.
@@ -32,7 +32,7 @@ class LinkedList:
         """
         raise NotImplementedError
 
-    def append(self, item) -> None:
+    def append(self, item: Any) -> None:
         """ Append an item to the end of the list
             Usage: linked_list.append(item)
             @:param item the desired item to append to the linked list
@@ -40,7 +40,7 @@ class LinkedList:
         """
         raise NotImplementedError
 
-    def prepend(self, item) -> None:
+    def prepend(self, item: Any) -> None:
         """ Prepend an item to the end of the list
             Usage: linked_list.prepend(item)
             @:param item the desired item to prepend to the linked list
@@ -48,7 +48,7 @@ class LinkedList:
         """
         raise NotImplementedError
 
-    def insert_before(self, before_item, new_item) -> None:
+    def insert_before(self, before_item: Any, new_item: Any) -> None:
         """ Insert a new item before a specified item
             Usage: linked_list.insert_before(before_item, new_item)
             @:param before_item the item that the user wishes to insert before
@@ -58,7 +58,7 @@ class LinkedList:
         """
         raise NotImplementedError
 
-    def insert_after(self, after_item, new_item) -> None:
+    def insert_after(self, after_item: Any, new_item: Any) -> None:
         """ Insert a new item after a specified item
             Usage: linked_list.insert_after(after_item, new_item)
             @:param before_item the item that the user wishes to insert before
@@ -87,7 +87,7 @@ class LinkedList:
         raise NotImplementedError
 
     @property
-    def first(self):
+    def first(self) -> Any:
         """ Return the item at the head of the linked list.
             Usage: first_item = linked_list.first
             @:return first the item stored in the head of the list
@@ -96,7 +96,7 @@ class LinkedList:
         raise NotImplementedError
 
     @property
-    def last(self):
+    def last(self) -> Any:
         """ Return the item at the tail of the linked list.
             Usage: last_item = linked_list.last
             @:return last the item stored in the tail of the list
@@ -127,7 +127,7 @@ class LinkedList:
         """
         raise NotImplementedError
 
-    def extract(self, item):
+    def extract(self, item: Any) -> None:
         """ Extract an item from the Linked List
             @:param item the item to remove
             @:return: None
@@ -156,7 +156,7 @@ class LinkedList:
         """
         raise NotImplementedError
 
-    def __contains__(self, item) -> bool:
+    def __contains__(self, item: Any) -> bool:
         """ Equality operator ==
             Usage: if item in linked_list:
             @:param item the item to search for
@@ -164,7 +164,7 @@ class LinkedList:
         """
         raise NotImplementedError
 
-    def __eq__(self, other) -> bool:
+    def __eq__(self, other: 'LinkedList') -> bool:
         """ Equality operator ==
             Usage: list1 == list2
             @:param other the instance to compare self to

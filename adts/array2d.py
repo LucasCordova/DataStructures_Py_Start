@@ -11,7 +11,7 @@ class Array2D:
         """ Private inner class _Row - represents a row in the 2D array
         """
 
-        def __init__(self, array2d, row_index: int) -> None:
+        def __init__(self, array2d: Array2D, row_index: int) -> None:
             """ Constructor - represents a row in the 2D array
                 Usage:  row = _Row(array2d, row_index)
                 @:param array2d the corresponding Array2D that the row belongs to.
@@ -20,7 +20,7 @@ class Array2D:
             """
             raise NotImplementedError
 
-        def __getitem__(self, column_index: int):
+        def __getitem__(self, column_index: int) -> Any:
             """ Bracket operator for getting an item
                 Usage: val = array2d[row_index][column_index]
                 @:param column_index the desired column_index
@@ -29,7 +29,7 @@ class Array2D:
             """
             raise NotImplementedError
 
-        def __setitem__(self, column_index, data: int):
+        def __setitem__(self, column_index: int, data: Any) -> None:
             """ Bracket operator for setting an item
                         Usage: array2d[row_index][column_index] = val
                         @:param column_index the desired column_index
@@ -38,18 +38,18 @@ class Array2D:
             """
             raise NotImplementedError
 
-    def __init__(self, row_len: int = 0, column_len: int = 0, instance=None) -> None:
+    def __init__(self, row_len: int = 0, column_len: int = 0, instance: 'Array2D'=None) -> None:
         """ Constructor
             Usage:  array = Array(10)
             @:param size the desired size of the Array
             @:param instance an optional Array2D instance to deep copy data from.
             @:return none
-            @:raises TypeError if instance is provided and it is not a LinkedList instance
+            @:raises TypeError if instance is provided and it is not a Array2D instance
         """
         raise NotImplementedError
 
     @staticmethod
-    def clone(instance):
+    def clone(instance: 'Array2D') -> Array2D:
         """ Clone the array2d
             Usage:  array2d = Array2D.clone(instance)
             @:param instance an Array instance to deep copy data from.
@@ -58,7 +58,7 @@ class Array2D:
         """
         raise NotImplementedError
 
-    def __getitem__(self, row_index: int):
+    def __getitem__(self, row_index: int) -> Array2D._Row:
         """ Bracket operator for getting an item
             Usage: val = array2d[row_index][column_index]
             @:param row_index the desired index
@@ -67,7 +67,7 @@ class Array2D:
         """
         raise NotImplementedError
 
-    def getitem(self, row_index: int, column_index: int):
+    def getitem(self, row_index: int, column_index: int) -> Any:
         """ Helper method for getting an item
             Usage: val = array2d.getitem(row_index, column_index)
             @:param row_index the desired row_index
@@ -77,7 +77,7 @@ class Array2D:
         """
         raise NotImplementedError
 
-    def setitem(self, row_index: int, column_index: int, data) -> None:
+    def setitem(self, row_index: int, column_index: int, data: Any) -> None:
         """ Helper method for setting an item
             Usage: array2d[row_index][column_index] = val
             @:param row_index the desired row_index to set
@@ -89,7 +89,7 @@ class Array2D:
         raise NotImplementedError
 
     @property
-    def columns_len(self):
+    def columns_len(self) -> int:
         """ len method for the length of the columns
                 Usage: column_length = array2d.columns_len
                 @:return the length of the columns
@@ -122,7 +122,7 @@ class Array2D:
         """
         raise NotImplementedError
 
-    def __eq__(self, other) -> bool:
+    def __eq__(self, other: 'Array2D') -> bool:
         """ Equality operator ==
             Usage: array1 == array2
             @:param other the instance to compare self to
@@ -130,7 +130,7 @@ class Array2D:
         """
         raise NotImplementedError
 
-    def __contains__(self, item) -> bool:
+    def __contains__(self, item: Any) -> bool:
         """ Contains operator (in)
             Usage: if 3 in array2d:
             @:param item the desired item to check whether it's in the array

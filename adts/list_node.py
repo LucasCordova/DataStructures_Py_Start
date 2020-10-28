@@ -7,7 +7,7 @@ class ListNode:
             2. Must achieve a minimum of 92% code coverage through unit testing.
     """
 
-    def __init__(self, item, previous_node=None, next_node=None) -> None:
+    def __init__(self, item, previous_node: 'ListNode' = None, next_node:'ListNode' = None) -> None:
         """ Constructor - represents a row in the 2D array
             Usage:  node = _Node() or node = _Node(None, None) or node = _Node(previous_node, next_node)
             @:param item the item (data) to store in the node
@@ -18,7 +18,7 @@ class ListNode:
         raise NotImplementedError
 
     @property
-    def item(self):
+    def item(self) -> Any:
         """ Property for the item
             Usage: item = node.item
             @:return the item stored in the node
@@ -26,7 +26,7 @@ class ListNode:
         raise NotImplementedError
 
     @item.setter
-    def item(self, item) -> None:
+    def item(self, item: Any) -> None:
         """ Setter for the item
             Usage: node.item = item
             @:param item the item to store in the node
@@ -35,7 +35,7 @@ class ListNode:
         raise NotImplementedError
 
     @property
-    def previous(self):
+    def previous(self) -> ListNode:
         """ Property for the previous node
             Usage: previous_node = node.previous
             @:return the previous node of the node
@@ -43,7 +43,7 @@ class ListNode:
         raise NotImplementedError
 
     @previous.setter
-    def previous(self, previous_node) -> None:
+    def previous(self, previous_node: ListNode) -> None:
         """ Setter for the previous node
             Usage: node.previous = previous_node
             @:param previous_node the node's previous_node instance
@@ -52,7 +52,7 @@ class ListNode:
         raise NotImplementedError
 
     @property
-    def next(self):
+    def next(self) -> ListNode:
         """ Property for the next node
             Usage: next_node = node.next
             @:return the next node of the node
@@ -60,7 +60,7 @@ class ListNode:
         raise NotImplementedError
 
     @next.setter
-    def next(self, next_node) -> None:
+    def next(self, next_node: ListNode) -> None:
         """ Setter for the next node
             Usage: node.next = next_node
             @:param next_node the node's next_node instance
@@ -68,7 +68,7 @@ class ListNode:
         """
         raise NotImplementedError
 
-    def __eq__(self, other) -> bool:
+    def __eq__(self, other: ListNode) -> bool:
         """ Equality operator ==
             Usage: array1 == array2
             @:param other the instance to compare self to

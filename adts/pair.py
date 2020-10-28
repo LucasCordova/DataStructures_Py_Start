@@ -7,7 +7,7 @@ class Pair:
             3. Must achieve a minimum of 92% code coverage through unit testing.
     """
 
-    def __init__(self, first=None, second=None, instance=None) -> None:
+    def __init__(self, first: Any = None, second: Any  = None, instance: Pair = None) -> None:
         """ Constructor
             Usage:  pair = Pair('My', 'Pair')
             @:param first the desired first part of the Pair
@@ -19,7 +19,7 @@ class Pair:
         raise NotImplementedError
 
     @staticmethod
-    def clone(instance):
+    def clone(instance: Pair) -> Pair:
         """ Clone the pair
             Usage:  pair = Pair.clone(instance)
             @:param instance an Pair instance to deep copy data from.
@@ -28,7 +28,7 @@ class Pair:
             """
         raise NotImplementedError
 
-    def __getitem__(self, index: int):
+    def __getitem__(self, index: int) -> Any:
         """ Bracket operator for getting an item from the pair. Only [0] and [1] are permitted for index.
             Usage: val = pair[0]
             @:param index the desired index
@@ -37,7 +37,7 @@ class Pair:
         """
         raise NotImplementedError
 
-    def __eq__(self, other) -> bool:
+    def __eq__(self, other: Pair) -> bool:
         """ Equality operator ==
             Usage: pair1 == pair2
             @:param other the instance to compare self to
@@ -45,14 +45,14 @@ class Pair:
         """
         raise NotImplementedError
 
-    def __iter__(self):
+    def __iter__(self) -> Any:
         """ Iterator operator
             Usage: for item in pair:
             @:return yields the item at index
         """
         raise NotImplementedError
 
-    def __contains__(self, item) -> bool:
+    def __contains__(self, item: Any) -> bool:
         """ Contains operator (in)
             Usage: if 3 in pair:
             @:param item the desired item to check whether it's in the pair

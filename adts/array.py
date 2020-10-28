@@ -8,7 +8,7 @@ class Array:
            3. Must achieve a minimum of 92% code coverage through unit testing.
     """
 
-    def __init__(self, size: int = 0, instance=None) -> None:
+    def __init__(self, size: int = 0, instance: 'Array'=None) -> None:
         """ Constructor
             Usage:  array = Array(10)
             @:param size the desired size of the Array (optional if providing instance)
@@ -19,7 +19,7 @@ class Array:
         raise NotImplementedError
 
     @staticmethod
-    def clone(instance):
+    def clone(instance: Array):
         """ Clone the array
             Usage:  array = Array.clone(instance)
             @:param instance an Array instance to deep copy data from.
@@ -37,7 +37,7 @@ class Array:
         """
         raise NotImplementedError
 
-    def __setitem__(self, index: int, data) -> None:
+    def __setitem__(self, index: int, data: Any) -> None:
         """ Bracket operator for setting an item
             Usage: array[index] = val
             @:param index the desired index to set
@@ -62,7 +62,7 @@ class Array:
         """
         raise NotImplementedError
 
-    def __eq__(self, other) -> bool:
+    def __eq__(self, other: 'Array') -> bool:
         """ Equality operator ==
             Usage: array1 == array2
             @:param other the instance to compare self to
@@ -86,7 +86,7 @@ class Array:
         """
         raise NotImplementedError
 
-    def __contains__(self, item) -> bool:
+    def __contains__(self, item: Any) -> bool:
         """ Contains operator (in)
             Usage: if 3 in array:
             @:param item the desired item to check whether it's in the array
