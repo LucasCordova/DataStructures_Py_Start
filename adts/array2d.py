@@ -1,3 +1,6 @@
+from typing import Any
+
+
 class Array2D:
     """ Class Array2D - representing 2D data using a 1D array
         Stipulations:
@@ -11,7 +14,7 @@ class Array2D:
         """ Private inner class _Row - represents a row in the 2D array
         """
 
-        def __init__(self, array2d: Array2D, row_index: int) -> None:
+        def __init__(self, array2d: 'Array2D', row_index: int) -> None:
             """ Constructor - represents a row in the 2D array
                 Usage:  row = _Row(array2d, row_index)
                 @:param array2d the corresponding Array2D that the row belongs to.
@@ -49,7 +52,7 @@ class Array2D:
         raise NotImplementedError
 
     @staticmethod
-    def clone(instance: 'Array2D') -> Array2D:
+    def clone(instance: 'Array2D') -> 'Array2D':
         """ Clone the array2d
             Usage:  array2d = Array2D.clone(instance)
             @:param instance an Array instance to deep copy data from.
@@ -58,7 +61,7 @@ class Array2D:
         """
         raise NotImplementedError
 
-    def __getitem__(self, row_index: int) -> Array2D._Row:
+    def __getitem__(self, row_index: int) -> 'Array2D._Row':
         """ Bracket operator for getting an item
             Usage: val = array2d[row_index][column_index]
             @:param row_index the desired index

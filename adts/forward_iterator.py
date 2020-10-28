@@ -1,3 +1,5 @@
+from typing import Any
+
 from adts.list_iterator import ListIterator
 from adts.list_node import ListNode
 

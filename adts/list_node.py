@@ -1,3 +1,5 @@
+from typing import Any
+
 
 class ListNode:
     """ ListNode - represents a node in a linked list
@@ -35,7 +37,7 @@ class ListNode:
         raise NotImplementedError
 
     @property
-    def previous(self) -> ListNode:
+    def previous(self) -> 'ListNode':
         """ Property for the previous node
             Usage: previous_node = node.previous
             @:return the previous node of the node
@@ -43,7 +45,7 @@ class ListNode:
         raise NotImplementedError
 
     @previous.setter
-    def previous(self, previous_node: ListNode) -> None:
+    def previous(self, previous_node: 'ListNode') -> None:
         """ Setter for the previous node
             Usage: node.previous = previous_node
             @:param previous_node the node's previous_node instance
@@ -52,7 +54,7 @@ class ListNode:
         raise NotImplementedError
 
     @property
-    def next(self) -> ListNode:
+    def next(self) -> 'ListNode':
         """ Property for the next node
             Usage: next_node = node.next
             @:return the next node of the node
@@ -60,7 +62,7 @@ class ListNode:
         raise NotImplementedError
 
     @next.setter
-    def next(self, next_node: ListNode) -> None:
+    def next(self, next_node: 'ListNode') -> None:
         """ Setter for the next node
             Usage: node.next = next_node
             @:param next_node the node's next_node instance
@@ -68,7 +70,7 @@ class ListNode:
         """
         raise NotImplementedError
 
-    def __eq__(self, other: ListNode) -> bool:
+    def __eq__(self, other: 'ListNode') -> bool:
         """ Equality operator ==
             Usage: array1 == array2
             @:param other the instance to compare self to
@@ -76,7 +78,7 @@ class ListNode:
         """
         raise NotImplementedError
 
-    def __iter__(self):
+    def __iter__(self) -> Any:
         """ Iterator operator
             Usage: for item in LinkedList:
             @:return yields the item at ListNode

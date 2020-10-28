@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from typing import Any
 
 from adts.list_node import ListNode
 
@@ -54,7 +55,7 @@ class ListIterator(ABC):
         pass
 
     @abstractmethod
-    def __iter__(self):
+    def __iter__(self) -> Any:
         """ Iterator operator
             Usage: for item in array:
             @:return yields the item at index

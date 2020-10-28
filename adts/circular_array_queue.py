@@ -1,3 +1,5 @@
+from typing import Any
+
 
 class CircularArrayQueue:
     """ Class CircularArrayQueue - representing a circular array queue using a 1D Array
@@ -9,7 +11,7 @@ class CircularArrayQueue:
             4. Must achieve a minimum of 92% code coverage through unit testing.
     """
 
-    def __init__(self, max_size: int = 0, instance: 'CircularArrayQueue'=None) -> None:
+    def __init__(self, max_size: int = 0, instance: 'CircularArrayQueue' = None) -> None:
         """ Constructor
             Usage:  queue = CircularArrayQueue(10)
             @:param size the desired size of the queue
@@ -20,7 +22,7 @@ class CircularArrayQueue:
         raise NotImplementedError
 
     @staticmethod
-    def clone(instance: CircularArrayQueue):
+    def clone(instance: 'CircularArrayQueue') -> 'CircularArrayQueue':
         """ Clone the queue
             Usage:  queue = CircularArrayQueue.clone(instance)
             @:param instance an CircularArrayQueue instance to deep copy data from.

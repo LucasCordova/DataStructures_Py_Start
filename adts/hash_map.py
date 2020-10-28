@@ -1,3 +1,5 @@
+from typing import Any
+
 
 class HashMap:
     """ Class HashMap - representing a HashMap (dictionary) where the
@@ -20,7 +22,7 @@ class HashMap:
         raise NotImplementedError
 
     @staticmethod
-    def clone(instance: HashMap):
+    def clone(instance: 'HashMap') -> 'HashMap':
         """ Clone the hash map
             Usage:  hash_map = HashMap.clone(instance)
             @:param instance an HashMap instance to deep copy data from.

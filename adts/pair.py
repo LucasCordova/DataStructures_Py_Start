@@ -1,3 +1,6 @@
+from typing import Any
+
+
 class Pair:
     """ Class Pair - representing a Pair as a Tuple
             Stipulations:
@@ -7,7 +10,7 @@ class Pair:
             3. Must achieve a minimum of 92% code coverage through unit testing.
     """
 
-    def __init__(self, first: Any = None, second: Any  = None, instance: Pair = None) -> None:
+    def __init__(self, first: Any = None, second: Any  = None, instance: 'Pair' = None) -> None:
         """ Constructor
             Usage:  pair = Pair('My', 'Pair')
             @:param first the desired first part of the Pair
@@ -19,7 +22,7 @@ class Pair:
         raise NotImplementedError
 
     @staticmethod
-    def clone(instance: Pair) -> Pair:
+    def clone(instance: 'Pair') -> 'Pair':
         """ Clone the pair
             Usage:  pair = Pair.clone(instance)
             @:param instance an Pair instance to deep copy data from.
@@ -37,7 +40,7 @@ class Pair:
         """
         raise NotImplementedError
 
-    def __eq__(self, other: Pair) -> bool:
+    def __eq__(self, other: 'Pair') -> bool:
         """ Equality operator ==
             Usage: pair1 == pair2
             @:param other the instance to compare self to

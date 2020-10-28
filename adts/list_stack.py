@@ -1,3 +1,5 @@
+from typing import Any
+
 
 class ListStack:
     """ Class ListStack - representing a stack using a LinkedList
@@ -8,7 +10,7 @@ class ListStack:
             3. Must achieve a minimum of 92% code coverage through unit testing.
     """
 
-    def __init__(self, instance: ListStack = None) -> None:
+    def __init__(self, instance: 'ListStack' = None) -> None:
         """ Constructor
             Usage:  stack = ListStack()
             @:param instance an optional ListStack instance to deep copy data from.
@@ -18,7 +20,7 @@ class ListStack:
         raise NotImplementedError
 
     @staticmethod
-    def clone(instance: ListStack) -> ListStack:
+    def clone(instance: 'ListStack') -> 'ListStack':
         """ Clone the stack
             Usage:  stack = ListStack.clone(instance)
             @:param instance an ListStack instance to deep copy data from.
@@ -35,7 +37,7 @@ class ListStack:
         """
         raise NotImplementedError
 
-    def pop(self) -> ListStack:
+    def pop(self) -> Any:
         """ Pop an item from the stack and return the item
             Usage:   item = stack.pop()
             @:return item that is popped
@@ -75,7 +77,7 @@ class ListStack:
         """
         raise NotImplementedError
 
-    def __eq__(self, other: ListStack) -> bool:
+    def __eq__(self, other: 'ListStack') -> bool:
         """ Equality operator ==
             Usage: array1 == array2
             @:param other the instance to compare self to

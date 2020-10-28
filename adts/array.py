@@ -1,3 +1,5 @@
+from typing import Any
+
 
 class Array:
     """ Class Array - representing 1D data using a Python List
@@ -8,7 +10,7 @@ class Array:
            3. Must achieve a minimum of 92% code coverage through unit testing.
     """
 
-    def __init__(self, size: int = 0, instance: 'Array'=None) -> None:
+    def __init__(self, size: int = 0, instance: 'Array' = None) -> None:
         """ Constructor
             Usage:  array = Array(10)
             @:param size the desired size of the Array (optional if providing instance)
@@ -19,7 +21,7 @@ class Array:
         raise NotImplementedError
 
     @staticmethod
-    def clone(instance: Array):
+    def clone(instance: 'Array') -> 'Array':
         """ Clone the array
             Usage:  array = Array.clone(instance)
             @:param instance an Array instance to deep copy data from.
@@ -28,7 +30,7 @@ class Array:
             """
         raise NotImplementedError
 
-    def __getitem__(self, index: int):
+    def __getitem__(self, index: int) -> Any:
         """ Bracket operator for getting an item
             Usage: val = array[0]
             @:param index the desired index
@@ -70,7 +72,7 @@ class Array:
         """
         raise NotImplementedError
 
-    def __iter__(self):
+    def __iter__(self) -> Any:
         """ Iterator operator
             Usage: for item in array:
             @:return yields the item at index

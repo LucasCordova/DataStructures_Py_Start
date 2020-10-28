@@ -1,3 +1,5 @@
+from typing import Any
+
 from adts.backward_iterator import BackwardIterator
 from adts.forward_iterator import ForwardIterator
 from adts.list_node import ListNode
@@ -13,7 +15,7 @@ class LinkedList:
             3. Must achieve a minimum of 92% code coverage through unit testing.
     """
 
-    def __init__(self, instance:'LinkedList'=None) -> None:
+    def __init__(self, instance: 'LinkedList' =None) -> None:
         """ Constructor for the LinkedList
             Usage:  linked_list = LinkedList()
             @:param instance an optional instance of a LinkedList to deep copy from
@@ -23,7 +25,7 @@ class LinkedList:
         raise NotImplementedError
 
     @staticmethod
-    def clone(instance: LinkedList):
+    def clone(instance: 'LinkedList') -> 'LinkedList':
         """ Clone the LinkedList
             Usage:  new_linked_list = LinkedList.clone(instance)
             @:param instance a LinkedList instance to deep copy data from.
@@ -142,14 +144,14 @@ class LinkedList:
         """
         raise NotImplementedError
 
-    def remove_first(self):
+    def remove_first(self) -> None:
         """ Remove the first item in the linked list
             Usage: linked_list.remove_first()
             @:raises IndexError if the list is empty
         """
         raise NotImplementedError
 
-    def remove_last(self):
+    def remove_last(self) -> None:
         """ Remove the last item in the linked list
             Usage: linked_list.remove_last()
             @:raises IndexError if the list is empty

@@ -1,3 +1,5 @@
+from typing import Any
+
 
 class ArrayStack:
     """ Class ArrayStack - representing a fixed-size stack using a 1D Array
@@ -9,7 +11,7 @@ class ArrayStack:
 
     """
 
-    def __init__(self, max_size: int = 0, instance: 'ArrayStack'=None) -> None:
+    def __init__(self, max_size: int = 0, instance: 'ArrayStack' = None) -> None:
         """ Constructor
             Usage:  stack = ArrayStack(10)
             @:param size the desired size of the stack
@@ -20,7 +22,7 @@ class ArrayStack:
         raise NotImplementedError
 
     @staticmethod
-    def clone(instance: ArrayStack):
+    def clone(instance: 'ArrayStack') -> 'ArrayStack':
         """ Clone the stack
                 Usage:  stack = ArrayStack.clone(instance)
                 @:param instance an ArrayStack instance to deep copy data from.

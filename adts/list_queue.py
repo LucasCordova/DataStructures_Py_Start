@@ -1,3 +1,5 @@
+from typing import Any
+
 
 class ListQueue:
     """ Class ListQueue - representing a queue based on a LinkedList
@@ -8,7 +10,7 @@ class ListQueue:
             3. Must achieve a minimum of 92% code coverage through unit testing.
     """
 
-    def __init__(self, instance: ListQueue = None) -> None:
+    def __init__(self, instance: 'ListQueue' = None) -> None:
         """ Constructor
             Usage:  queue = ListQueue()
             @:param instance an optional ListQueue instance to deep copy data from.
@@ -18,7 +20,7 @@ class ListQueue:
         raise NotImplementedError
 
     @staticmethod
-    def clone(instance: ListQueue) -> ListQueue:
+    def clone(instance: 'ListQueue') -> 'ListQueue':
         """ Clone the queue
             Usage:  queue = ListQueue.clone(instance)
             @:param instance an ListQueue instance to deep copy data from.
@@ -75,7 +77,7 @@ class ListQueue:
         """
         raise NotImplementedError
 
-    def __eq__(self, other: ListQueue) -> bool:
+    def __eq__(self, other: 'ListQueue') -> bool:
         """ Equality operator ==
             Usage: array1 == array2
             @:param other the instance to compare self to
