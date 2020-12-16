@@ -1,7 +1,5 @@
 from typing import Any
 
-from adts.backward_iterator import BackwardIterator
-from adts.forward_iterator import ForwardIterator
 from adts.list_node import ListNode
 
 
@@ -113,22 +111,6 @@ class LinkedList:
         """
         raise NotImplementedError
 
-    @property
-    def forward_begin(self) -> ForwardIterator:
-        """ Return a ForwardIterator to the head of the linked list.
-            Usage: forward_iterator = linked_list.forward_begin
-            @:return forward_iterator iterator that is pointed to the head of the linked list.
-        """
-        raise NotImplementedError
-
-    @property
-    def backward_begin(self) -> BackwardIterator:
-        """ Return a BackwardIterator to the tail of the linked list.
-            Usage: backward_iterator = linked_list.backward_begin
-            @:return backward_iterator iterator that is pointed to the tail of the linked list.
-        """
-        raise NotImplementedError
-
     def extract(self, item: Any) -> None:
         """ Extract an item from the Linked List
             @:param item the item to remove
@@ -171,6 +153,27 @@ class LinkedList:
             Usage: list1 == list2
             @:param other the instance to compare self to
             @:return true if the lists are equal (deep check)
+        """
+        raise NotImplementedError
+
+    def __iter__(self) -> Any:
+        """ Iterator operator
+            Usage: for item in LinkedList:
+            @:return yields the item at ListNode
+        """
+        raise NotImplementedError
+
+    def __reversed__(self) -> Any:
+        """ Reversed iterator operator
+            Usage: for item in reversed(list):
+            @:return yields the item at ListNode
+        """
+    raise NotImplementedError
+
+    def __len__(self) -> int:
+        """ len operator for getting length of the linked list
+            Usage: size = len(linked_list)
+            @:return the length of the LinkedList
         """
         raise NotImplementedError
 

@@ -62,14 +62,6 @@ class ListStack:
         raise NotImplementedError
 
     @property
-    def size(self) -> int:
-        """ Get the size of the number of items on the stack
-            Usage:   size = stack.size
-            @:return size the number of items on the stack
-        """
-        raise NotImplementedError
-
-    @property
     def empty(self) -> bool:
         """ Check whether the stack is empty
             Usage:   empty = stack.empty

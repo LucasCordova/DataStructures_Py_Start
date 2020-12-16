@@ -79,6 +79,13 @@ class Array:
         """
         raise NotImplementedError
 
+    def __reversed__(self) -> Any:
+        """ Reversed iterator operator
+            Usage: for item in reversed(array):
+            @:return yields the item at index starting at the end
+        """
+    raise NotImplementedError
+
     def __delitem__(self, index: int) -> None:
         """ Delete an item in the array. Copies the array contents from index + 1 down
             to fill the gap caused by deleting the item and shrinks the array size down by one

@@ -65,14 +65,6 @@ class ArrayStack:
         raise NotImplementedError
 
     @property
-    def size(self) -> int:
-        """ Get the size of the number of items on the stack
-                Usage:   size = stack.size
-                @:return size the number of items on the stack
-        """
-        raise NotImplementedError
-
-    @property
     def full(self) -> bool:
         """ Check whether the stack is full
                 Usage:   full = stack.full

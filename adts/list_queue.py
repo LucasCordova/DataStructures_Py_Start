@@ -62,14 +62,6 @@ class ListQueue:
         raise NotImplementedError
 
     @property
-    def size(self) -> int:
-        """ Get the size of the number of items on the queue
-            Usage:   size = queue.size
-            @:return size the number of items on the queue
-        """
-        raise NotImplementedError
-
-    @property
     def empty(self) -> bool:
         """ Check whether the queue is empty
             Usage:   empty = queue.empty

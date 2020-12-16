@@ -78,20 +78,6 @@ class ListNode:
         """
         raise NotImplementedError
 
-    def __iter__(self) -> Any:
-        """ Iterator operator
-            Usage: for item in LinkedList:
-            @:return yields the item at ListNode
-        """
-        raise NotImplementedError
-
-    def __len__(self) -> int:
-        """ len operator for getting length of the linked list
-            Usage: size = len(linked_list)
-            @:return the length of the LinkedList
-        """
-        raise NotImplementedError
-
     def __str__(self) -> str:
         """ Return a string representation of the data and structure
             Usage: print(node):
